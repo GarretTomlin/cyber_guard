@@ -1,13 +1,11 @@
 import { Metadata } from "next"
 import Image from "next/image"
-import '../../public/globals.css'
-
 import TeamSwitcher from "@/components/Dashboard/team-switcher";
 import {MainNav} from "@/components/Dashboard/main-nav";
 import {UserNav} from "@/components/Dashboard/user-nav";
 import {CalendarDateRangePicker} from "@/components/Dashboard/date-range-picker";
 import {Overview} from "@/components/Dashboard/overview";
-import {RecentSales} from "@/components/Dashboard/recent-sales";
+import {NotableUsers} from "@/components/Dashboard/recent-sales";
 import {DataTable} from "@/components/Reports/DataTable";
 import {Notify} from "@/components/Dashboard/search";
 import Happen from "@/components/Dashboard/line";
@@ -116,9 +114,8 @@ This week
                       </svg>
                     </CardHeader>
                     <CardContent>
-                      <div className="text-2xl font-bold">+2350</div>
+                      <div className="text-2xl font-bold"></div>
                       <p className="text-xs text-muted-foreground">
-                        +180.1% from last month
                       </p>
                     </CardContent>
                   </Card>
@@ -140,9 +137,8 @@ This week
                       </svg>
                     </CardHeader>
                     <CardContent>
-                      <div className="text-2xl font-bold">+12,234</div>
+                      <div className="text-2xl font-bold"></div>
                       <p className="text-xs text-muted-foreground">
-                        +19% from last month
                       </p>
                     </CardContent>
                   </Card>
@@ -165,9 +161,8 @@ This week
                       </svg>
                     </CardHeader>
                     <CardContent>
-                      <div className="text-2xl font-bold">+573</div>
+                      <div className="text-2xl font-bold"></div>
                       <p className="text-xs text-muted-foreground">
-                        +201 since last hour
                       </p>
                     </CardContent>
                   </Card>
@@ -175,7 +170,7 @@ This week
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
                   <Card className="col-span-4">
                     <CardHeader>
-                      <CardTitle>Overview</CardTitle>
+                      <CardTitle>Threat Overview</CardTitle>
                     </CardHeader>
                     <CardContent className="pl-2">
                       <Overview />
@@ -183,13 +178,13 @@ This week
                   </Card>
                   <Card className="col-span-3">
                     <CardHeader>
-                      <CardTitle>Recent Sales</CardTitle>
+                      <CardTitle>Notable Users</CardTitle>
                       <CardDescription>
-                        You made 265 sales this month.
+                        Suspicious user activity.
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <RecentSales />
+                      <NotableUsers />
                     </CardContent>
                   </Card>
                 </div>

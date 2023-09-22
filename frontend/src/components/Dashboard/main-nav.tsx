@@ -14,9 +14,9 @@ export function MainNav({
     >
       <Link
         href="/examples/dashboard"
-        className="text-sm font-medium transition-colors hover:text-primary"
+        className="text-sm font-medium transition-colors hover:text-primar text-white"
       >
-        Overview
+        Agents
       </Link>
       <Link
         href="/examples/dashboard"
